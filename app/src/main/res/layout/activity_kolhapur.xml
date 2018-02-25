@@ -1,0 +1,640 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jyotiba_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:onClick="jyotiba_des"
+                android:layout_marginTop="0dp"
+                card_view:cardCornerRadius="0dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/joytiba_img_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/jyotibatemple"
+                        android:layout_above="@+id/jyotiba_imageView"
+                        android:paddingTop="40dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:id="@+id/jyotiba_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/jyotiba_temple"
+                        android:textColor="#3f48cc"
+                        android:textSize="18dp"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="8dp"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line"
+                        android:id="@+id/jyotiba_imageView"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="24dp"
+                        android:paddingBottom="13dp"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.0"
+                        android:paddingTop="3dp"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp"
+                        android:id="@+id/jyotiba_num"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="14dp"
+                        >
+                    </TextView>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="42dp"
+                        android:id="@+id/jyotiba_star1">
+                    </ImageView>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="64dp"
+                        android:id="@+id/jyotiba_star2">
+                    </ImageView>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="86dp"
+                        android:id="@+id/jyotiba_star3">
+                    </ImageView>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="108dp"
+                        android:id="@+id/jyotiba_star4">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starempty"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="130dp"
+                        android:id="@+id/jyotiba_star5"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/mahalaxmi_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:onClick="mahalaxmi_des"
+                android:layout_marginTop="5dp"
+                card_view:cardCornerRadius="0dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line"
+                        android:id="@+id/mahalaxmi_imageView"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="24dp"
+                        android:paddingBottom="13dp"/>
+
+                    <ImageView
+                        android:id="@+id/mahalaxmi_img_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mahalaxmitemple"
+                        android:layout_above="@id/mahalaxmi_imageView"
+                        android:paddingTop="40dp"
+                        android:scaleType="fitXY"
+                        />
+
+                    <TextView
+                        android:id="@+id/mahalaxmi_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/mahalaxmi_temple"
+                        android:textColor="#3f48cc"
+                        android:textSize="18dp"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.6"
+                        android:paddingTop="3dp"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp"
+                        android:id="@+id/mahalaxmi_num"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="14dp"
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="42dp"
+                        android:id="@+id/mahalaxmi_star1">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="64dp"
+                        android:id="@+id/mahalaxmi_star2">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="86dp"
+                        android:id="@+id/mahalaxmi_star3">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="108dp"
+                        android:id="@+id/star4">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starhalf"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="130dp"
+                        android:id="@+id/mahalaxmi_star5"/>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/panhalafort_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:onClick="panhalafort_des"
+                android:layout_marginTop="5dp"
+                card_view:cardCornerRadius="0dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line"
+                        android:id="@+id/panhalafort_imageView"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="24dp"
+                        android:paddingBottom="13dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/panhalafort_img_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/panhalafort"
+                        android:layout_above="@id/panhalafort_imageView"
+                        android:scaleType="fitXY"
+                        android:paddingTop="40dp"/>
+
+                    <TextView
+                        android:id="@+id/panhalafort_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/panhala_fort"
+                        android:textColor="#3f48cc"
+                        android:textSize="18dp"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.0"
+                        android:paddingTop="3dp"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp"
+                        android:id="@+id/panhalafort_num"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="14dp"
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="42dp"
+                        android:id="@+id/panhalafort_star1">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="64dp"
+                        android:id="@+id/panhalafort_star2">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="86dp"
+                        android:id="@+id/panhalafort_star3">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="108dp"
+                        android:id="@+id/panhalafort_star4">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starempty"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="130dp"
+                        android:id="@+id/panhalafort_star5"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rankalalake_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:onClick="rankalalake_des"
+                card_view:cardCornerRadius="0dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line"
+                        android:id="@+id/rankalalake_imageView"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="24dp"
+                        android:paddingBottom="13dp"/>
+
+                    <ImageView
+                        android:id="@+id/rankalalake_img_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rankalalake"
+                        android:layout_above="@id/rankalalake_imageView"
+                        android:paddingTop="40dp"
+                        android:scaleType="fitXY"
+                        />
+
+                    <TextView
+                        android:id="@+id/rankalalake_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/rankala_lake"
+                        android:textColor="#3f48cc"
+                        android:textSize="18dp"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.0"
+                        android:paddingTop="3dp"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp"
+                        android:id="@+id/rankalalake_num"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="14dp"
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="42dp"
+                        android:id="@+id/rankalalake_star1">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="64dp"
+                        android:id="@+id/rankalalake_star2">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="86dp"
+                        android:id="@+id/rankalalake_star3">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starfull"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="108dp"
+                        android:id="@+id/rankalalake_star4">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_starempty"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="130dp"
+                        android:id="@+id/rankalalake_star5"/>
+
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/hotel_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginTop="5dp"
+                card_view:cardCornerRadius="0dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/ic_hotel"
+                        android:paddingLeft="3dp"
+                        android:scaleType="fitXY">
+
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/hotel_kolhapur_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="Want to stay in Kolhapur ? Quick look Hotels in Kolapur"
+                        android:textSize="14sp"
+                        android:paddingLeft="49dp"
+                        android:paddingTop="7dp"
+                        />
+                    <ImageView
+                        android:id="@+id/hotel_kolhapur"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/hotel"
+                        android:layout_above="@+id/hotel_line"
+                        android:paddingTop="50dp"
+                        android:scaleType="fitXY"
+                        >
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line"
+                        android:id="@+id/hotel_line"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="24dp"
+                        android:paddingBottom="10dp"
+                        android:scaleType="fitXY">
+                    </ImageView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        style="@android:style/Widget.Holo.Button.Borderless"
+                        android:text="See Hotels in Kolhapur"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/button_text_color"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingBottom="9dp"
+                        android:id="@+id/button_hotel"
+                        android:drawableRight="@drawable/ic_next"
+                        android:layout_gravity="start"
+                        android:onClick="kolhapurhotels"
+                        android:background="#FFFFFF"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/resturants_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginTop="5dp"
+                card_view:cardCornerRadius="0dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_dinning"
+                        android:paddingLeft="3dp"
+                        android:scaleType="fitXY"
+                        android:paddingTop="3dp">
+
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/resturants_kolhapur_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="Very Hungry!!!! See Resturants and Hotels in Kolhapur"
+                        android:textSize="14sp"
+                        android:paddingLeft="49dp"
+                        android:paddingTop="7dp"
+                        />
+                    <ImageView
+                        android:id="@+id/resturants_kolhapur"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/resturant"
+                        android:layout_above="@+id/resturants_line"
+                        android:paddingTop="50dp"
+                        android:scaleType="fitXY"
+                        >
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line"
+                        android:id="@+id/resturants_line"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="24dp"
+                        android:paddingBottom="10dp"
+                        android:scaleType="fitXY">
+                    </ImageView>
+                    <Button
+                        android:onClick="kolhapurresturants"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        style="@android:style/Widget.Holo.Button.Borderless"
+                        android:text="See Resturants in Kolhapur"
+                        android:textColor="@color/button_text_color"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingBottom="9dp"
+                        android:id="@+id/button_resturants"
+                        android:drawableRight="@drawable/ic_next"
+                        android:layout_gravity="start"
+                        android:background="#FFFFFF"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="0dp"
+                android:onClick="kolhapurrailway"
+                card_view:cardCornerRadius="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/rail"
+                        android:scaleType="fitXY">
+                    </ImageView>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="Want to Leave Kolhapur !! Chech next 2 hrs train"
+                        android:textSize="14sp"
+                        android:paddingTop="7dp"
+                        />
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

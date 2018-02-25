@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rishab.owner.mt" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- (Rishab) Below permission are not required to use Google Maps Android API v2, but are recommended. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".MT"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Jalgaon"
+            android:label="@string/title_activity_jalgaon"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Mumbai"
+            android:label="@string/title_activity_mumbai"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Gandhi_Tirth"
+            android:label="@string/title_activity_gandhi__tirth"
+            android:parentActivityName=".Jalgaon"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ajanta"
+            android:label="@string/title_activity_ajanta"
+            android:parentActivityName=".Jalgaon"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".manudevi"
+            android:label="@string/title_activity_manudevi"
+            android:parentActivityName=".Jalgaon"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".gate_way_of_india"
+            android:label="@string/title_activity_gate_way_of_india"
+            android:parentActivityName=".Mumbai"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".elephanta_caves"
+            android:label="@string/title_activity_elephanta_caves"
+            android:parentActivityName=".Mumbai"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".chhatrapati_shivaji_museum"
+            android:label="@string/title_activity_chhatrapati_shivaji_museum"
+            android:parentActivityName=".Mumbai"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".juhu_beach"
+            android:label="@string/title_activity_juhu_beach"
+            android:parentActivityName=".Mumbai"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".sanjay_gandhi_national_park"
+            android:label="@string/title_activity_sanjay_gandhi_national_park"
+            android:parentActivityName=".Mumbai"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".taj_hotel"
+            android:label="@string/title_activity_taj_hotel"
+            android:parentActivityName=".Mumbai"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".chhatrapati_shivaji_terminus"
+            android:label="@string/title_activity_chhatrapati_shivaji_terminus"
+            android:parentActivityName=".Mumbai"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".nashik"
+            android:label="@string/title_activity_nashik"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".trimbakeshwar"
+            android:label="@string/title_activity_trimbakeshwar"
+            android:parentActivityName=".nashik"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pandavleni_caves"
+            android:label="@string/title_activity_pandavleni_caves"
+            android:parentActivityName=".nashik"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".muktidham"
+            android:label="@string/title_activity_muktidham"
+            android:parentActivityName=".nashik"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Nagpur"
+            android:label="@string/title_activity_nagpur"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".deekshabhoomi"
+            android:label="@string/title_activity_deekshabhoomi"
+            android:parentActivityName=".Nagpur"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".dragon_palace"
+            android:label="@string/title_activity_dragon_palace"
+            android:parentActivityName=".Nagpur"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".tadoba_national_park"
+            android:label="@string/title_activity_tadoba_national_park"
+            android:parentActivityName=".Nagpur"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".maharaj_bagh_zoo"
+            android:label="@string/title_activity_maharaj_bagh_zoo"
+            android:parentActivityName=".Nagpur"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".tourist_place_map"
+            android:label="@string/title_activity_tourist_place_map" >
+        </activity>
+        <activity
+            android:name=".Kolhapur"
+            android:label="@string/title_activity_kolhapur"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".jyotiba_temple"
+            android:label="@string/title_activity_jyotiba_temple"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Mahalaxmi"
+            android:label="@string/title_activity_mahalaxmi"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Panhala_fort"
+            android:label="@string/title_activity_panhala_fort"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Rankala_lake"
+            android:label="@string/title_activity_rankala_lake"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".pune"
+            android:label="@string/title_activity_pune"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".agakhanpalace"
+            android:label="@string/title_activity_agakhanpalace"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Alandi"
+            android:label="@string/title_activity_alandi"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Dehu"
+            android:label="@string/title_activity_dehu"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Katrajzoo"
+            android:label="@string/title_activity_katrajzoo"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Kelkarmuseum"
+            android:label="@string/title_activity_kelkarmuseum"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Ranjangaon"
+            android:label="@string/title_activity_ranjangaon"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Shaniwarwada"
+            android:label="@string/title_activity_shaniwarwada"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Shivnery"
+            android:label="@string/title_activity_shivnery"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Abus"
+            android:label="@string/title_activity_abus"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AdChro"
+            android:label="@string/title_activity_ad_chro"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".padmalya"
+            android:label="@string/title_activity_padmalya"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".raman_science_center"
+            android:label="@string/title_activity_raman_science_center"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".lonalva"
+            android:label="@string/title_activity_lonalva"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Displaylistview"
+            android:label="@string/title_activity_displaylistview"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".row_layout"
+            android:label="@string/title_activity_row_layout"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AddInfo"
+            android:label="@string/title_activity_add_info"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".RList"
+            android:label="@string/title_activity_rlist"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

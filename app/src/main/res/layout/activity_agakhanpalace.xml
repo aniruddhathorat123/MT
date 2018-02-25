@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:focusable="false">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/agakhanpalace"
+                />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/agakhan_palace"
+                        android:gravity="left"
+                        android:textSize="23dp"
+                        android:id="@+id/agaKhanpalace"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="13dp"
+                        android:layout_marginTop="3dp"
+                        android:paddingLeft="2dp"
+                        android:text="      The Aga Khan Palace was built by Sultan Muhammed Shah Aga Khan III in Pune, India. Built in 1892, it is one of the biggest landmarks in Indian history. The palace was an act of charity by the Sultan who wanted to help the poor in the neighbouring areas of Pune, who were drastically hit by famine. Aga Khan Palace is a majestic building and is considered to be one of the greatest marvels of India."
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="2dp"
+                        android:text="History"
+                        android:textColor="#222"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="2dp"
+                        android:text="      Historically, the palace holds great significance. Mahatma Gandhi, his wife Kasturba Gandhi and his secretary Mahadev Desai were interned in the palace from 9 August 1942 to 6 May 1944, following the launch of Quit India Movement. Kasturba Gandhi and Mahadev Desai died during their captivity period in the palace and have theirSamadhis located over there. "
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="2dp"
+                        android:text="      In 1969, Aga Khan Palace was donated to the Indian people by Aga Khan IV as a mark of respect to Gandhi and his philosophy.[1] Today the palace houses a memorial on Gandhi where his ashes were kept. "
+                        />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="7dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="agakhanpalacereview"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/review"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="agakhanpalacereach"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/how_to_reach"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="agakhanpalacemap"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/google_map"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+      <!--      <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="agakhanpalacephotos"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/more_photos"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>       -->
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+

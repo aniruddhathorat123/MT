@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:focusable="false">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/kelkarmuseum"
+                />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kelkar_museum"
+                        android:gravity="left"
+                        android:textSize="23dp"
+                        android:id="@+id/gt"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="13dp"
+                        android:layout_marginTop="3dp"
+                        android:paddingLeft="2dp"
+                        android:text="   The Raja Dinkar Kelkar Museum is in Pune, Maharashtra, India. It contains the collection of Dr. Dinkar G. Kelkar (1896–1990), dedicated to the memory of his only son, Raja. The three-storey building houses various sculptures dating back to the 14th century. There are also ornaments made of ivory, silver and gold, musical instruments (a particularly fine collection), war weapons and vessels."
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="2dp"
+                        android:text="    The collection was started around 1920 and by 1960 it contained around 15,000 objects. The museum now holds over 20,000 objects of which 2,500 are on display. These consist of mainly Indian decorative items from everyday life and other art objects, mostly from the 18th and 19th centuries."
+                        />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="7dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="kelkarmuseumreview"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/review"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="kelkarmuseumreach"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/how_to_reach"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="kelkarmuseummap"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/google_map"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+ <!--           <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="kelkarmuseumphotos"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/more_photos"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>       -->
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

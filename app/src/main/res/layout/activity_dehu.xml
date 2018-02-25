@@ -1,0 +1,243 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:focusable="false">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_thum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dehu"
+                />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dehu"
+                        android:gravity="left"
+                        android:textSize="23dp"
+                        android:id="@+id/gt"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="13dp"
+                        android:layout_marginTop="3dp"
+                        android:paddingLeft="2dp"
+                        android:text="   Dehu is a place of Sant Tukaram - well known sant in Maharashtra. He lived here and taught people how to pray to god. He and Sant Dnyaneshwar were the popular sants and both worshiped Lord Vitthal. The 'Palakhi' in the month of 'Ashadh' from Dehu is one of the main attractions of Dehu. Many people have taken part in it many years. Dehu is a place where the 'Abhang 'of Sant Tukaram can be remembered."
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="2dp"
+                        android:text="      One can see his temple here on the banks of the river. This temple was constructed by his younger son Narayanbaba in 1723. Various other temples nearby are worth seeing. A rock where Sant Tukaram was on fast is also here. Sant Tukaram will always be remembered for his Abhang and Gatha."
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="2dp"
+                        android:text="      There is one Gatha Temple on the bank of Indrayani river. A big statue of Tukaram sitting with a Veena in his hand is located at the entrance of the big Gatha temple. In the Gatha temple, about 4,000 abhangs (verses) created by Tukaram maharaj were carved on the walls. "
+                        />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="7dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="dehureview"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/review"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="dehureach"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/how_to_reach"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="dehumap"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/google_map"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+    <!--        <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="dehuphotos"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/more_photos"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>           -->
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+

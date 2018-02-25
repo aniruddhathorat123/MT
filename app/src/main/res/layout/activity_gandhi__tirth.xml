@@ -1,0 +1,246 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:focusable="false">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_thum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/grc"
+                />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gandhi_teerth"
+                        android:textColor="#000000"
+                        android:gravity="left"
+                        android:textSize="23dp"
+                        android:id="@+id/gt"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="13dp"
+                        android:layout_marginTop="3dp"
+                        android:paddingLeft="2dp"
+                        android:text="         ‘Gandhi Teerth’ is a research institution and museum on Mahatma Gandhi, in Jalgaon, Maharashtra, India. Its initiated and promoted by the Gandhi Foundation. This is located 60 km away from Ajanta caves. Gandhi Research Foundation (GRF), was inaugurated by President of India, Pratibha Patil on 25 March 2012."
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="13dp"
+                        android:paddingLeft="2dp"
+                        android:text="         The structure was built sustainable and scientifically in Jodhpur stone, under a green norms in view to last for centuries. Includes Auditorium, an amphitheatre, Meeting / Class rooms and Guest Houses facility. Library and Archives with specially treated preserved historic documents for researchers. Shops having Khadi Clothes, handmade Gift Items and Gandhian Literature's."
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="About Gandhi Museum"
+                        android:paddingLeft="10dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="2dp"
+                        android:text="         Museum has 30 interactive segments, which equipped with Touch screen, Bioscope, describing Mahatma Gandhi. It has multi lingual audio guided, air-conditioned museum, on the life and works of Mahatma Gandhi. It takes approx 2 hours 30 minutes time led by amiable guides."
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="9dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="gandhiteerthreview"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/review"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="3dp"
+                        android:autoText="false" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="gandhiteerthreach"
+            >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/how_to_reach"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+        </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="gandhiteerthmap"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/google_map"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_next"
+                        android:paddingTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+ <!--           <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:onClick="gandhiteerthphotos"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="@string/more_photos"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="20sp"
+                        style="@android:style/Holo.ButtonBar"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentRight="true"
+                        style="@android:style/Holo.ButtonBar"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>       -->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

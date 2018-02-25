@@ -1,0 +1,13 @@
+<resources>
+    <string name="title_activity_about_us">AboutUs</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_daaaaa">daaaaa</string>
+    <string name="title_activity_chrome">chrome</string>
+    <string name="title_activity_google">google</string>
+    <string name="title_activity_display_listview">Review</string>
+    <string name="title_activity_displaylistview">Review</string>
+
+</resources>
